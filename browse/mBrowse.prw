@@ -28,4 +28,7 @@ User Function fMBrowse()
     //Encerrando a rotina
     (cTabela)->(DbCloseArea())
     RestArea(aArea)
+// Teste comit  
+// Segundo commit    
+
 Return
