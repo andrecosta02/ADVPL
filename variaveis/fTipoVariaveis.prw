@@ -1,7 +1,7 @@
 #include "Totvs.ch"
 
 /*
-{Protheus.doc} fTipos
+{Protheus.doc} fTipoVaria
 
     - Objetivo:     Demonstrar os Tipos de Variaveis 
 
@@ -11,7 +11,7 @@
 
 */
 
-User Function fTipos()
+User Function fTipoVaria()
     Local aArea         := GetArea()
     Local nSalario      := 5000.80                                              // Variavel Numerica
     Local nFTGS         := 8 // Porcentagem FGTS                                // Variavel Numerica
@@ -21,7 +21,7 @@ User Function fTipos()
     Local aFilhos       := {"Arthur", "Lucas"}                                  // Variavel Array
     Local aSalarios     := {{3500, "2021"}, {4000, "2023"}, {5000.80, "2024"}}  // Array multi-dimensional
     Local bCalcFGTS1    := { || (nSalario * nFTGS) / 100 }                      // Bloco de Codigo
-    Local bCalcFGTS2    := "(nSalario * nFTGS) / 100"                           // Bloco de Codigo em String
+    Local cCalcFGTS2    := "(nSalario * nFTGS) / 100"                           // Bloco de Codigo em String
 
     Local nI := 1 // Variavel usada nos dois For
 
@@ -37,7 +37,7 @@ User Function fTipos()
     cContent := cValToChar(cContent)    // Converte o Resultado pra Caracte
     FwAlertInfo("Calculo de FGTS R$" + cContent + " com base no salario: R$" + cValToChar(nSalario), "Mensagem")
 
-    cContent := &bCalcFGTS2             // Usar o & para ativar o Bloco de Codigo em String
+    cContent := &cCalcFGTS2             // Usar o & para ativar o Bloco de Codigo em String
     FwAlertInfo("Calculo de FGTS R$" + cContent + " com base no salario: R$" + cValToChar(nSalario), "Mensagem")
 
 

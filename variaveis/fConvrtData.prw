@@ -1,7 +1,7 @@
 #include "Totvs.ch"
 
 /*
-{Protheus.doc} fConversoes
+{Protheus.doc} fConvrtData
 
     - Objetivo:     Demonstrar as formas de conversões 
 
@@ -11,13 +11,15 @@
 
 */
 
-User Function fConversoes()
+User Function fConvrtData()
     Local aArea         := GetArea()
 
     /*
     Funcoes para usar com Datas
     */
 
+    // Date -           Retorna a data atual	
+    dData := Date() // 06/11/2024
 
     // CTOD -           Converte de caracter para data	
     dData := CTOD("20/05/2010") // "20/05/2010" --> 20/05/10
@@ -29,10 +31,7 @@ User Function fConversoes()
     cData := DTOS(Date()) // 20/05/10 --> "20100510"
     
     // STOD -           Converte de String para data no formato dd/mm/aaaa	
-    dData := STOD("20100510") // "20100510" --> 20/05/10
-    
-    // Date -           Retorna a data atual	
-    dData := Date() // 06/11/2024
+    dData := STOD("20100510") // "20100510" --> 20/05/10 
     
     // Day -            Retorna o dia de uma data	
     nData := Day(Date()) // Se data for 06/11/2024, retorna 6
@@ -103,25 +102,23 @@ User Function fConversoes()
     // GPEDiaSem -      Retorna o nome do dia completo
     cDiaAtuFull := GPEDiaSem(Date()) // Ex: "Segunda-Feira"
     
-    // Dow -            Retorna o dia da Semana	
-    Dow(Date())
+    // Dow -            Retorna o numero referente ao dia da Semana
+    nDiaSemana := Dow(Date()) // eExemplo, se for Domingo, retorna 1 
     
     // FirstDate -      Retorna a Data do Primeiro dia do mes da data passada	
-    FirstDate(Date())
+    dFirstDate := FirstDate(Date()) // Retorna: 01/11/2024
     
     // LastDate -       Retorna a Data do ùltimo dia do mes da data passada	
-    LastDate(Date())
+    dLastDate := LastDate(Date()) // Retorna: 30/11/2024
     
     // Last_Day -       Retorna o último dia do mes de uma data	
-    Last_Day(Date())
+    nLastDay := Last_Day(Date()) // Retorna: 28, 29, 30 ou 31
     
     // FirstYDate -     Retorna a Data do Primeiro dia do Ano da Data Passada	
-    FirstYDate(Date())
+    dFirstAno := FirstYDate(Date()) // Retorna: 01/01/2024
     
     // LastYDate -      Retorna a Data do último dia do Ano da Data Passada	
-    LastYDate(Date())
-
-
+    dLastAno := LastYDate(Date()) // Retorna: 30/12/2024
 
     RestArea(aArea)
 Return
