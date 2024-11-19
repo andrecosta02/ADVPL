@@ -1,17 +1,18 @@
 User Function zAlert()
-    FWAlertError("Mensagem de erro", "TÌtulo FWAlertError")
+    FWAlertError("Mensagem de erro", "T√≠tulo FWAlertError")
     
-    FWAlertExitPage("Mensagem de navegaÁ„o de p·gina", "TÌtulo FWAlertExitPage")
+    FWAlertExitPage("Mensagem de navega√ß√£o de p√°gina", "T√≠tulo FWAlertExitPage")
     
-    FWAlertHelp("Mensagem do problema", "Mensagem da soluÁ„o - FWAlertHelp")
+    FWAlertHelp("Mensagem do problema", "Mensagem da solu√ß√£o - FWAlertHelp")
     
-    FWAlertInfo("Mensagem informativa", "TÌtulo FWAlertInfo")
+    FWAlertInfo("Mensagem informativa", "T√≠tulo FWAlertInfo")
     
-    FWAlertNoYes("Mensagem de pergunta N„o / Sim", "TÌtulo FWAlertNoYes")
+    FWAlertNoYes("Mensagem de pergunta N√£o / Sim", "T√≠tulo FWAlertNoYes")
     
-    FWAlertSuccess("Mensagem de sucesso", "TÌtulo FWAlertSuccess")
+    FWAlertSuccess("Mensagem de sucesso", "T√≠tulo FWAlertSuccess")
     
-    FWAlertWarning("Mensagem de aviso", "TÌtulo FWAlertWarning")
+    FWAlertWarning("Mensagem de aviso", "T√≠tulo FWAlertWarning")
     
-    FWAlertYesNo("Mensagem de pergunta Sim / N„o", "TÌtulo FWAlertYesNo")
+    FWAlertYesNo("Mensagem de pergunta Sim / N√£o", "T√≠tulo FWAlertYesNo")
+"teste commit"
 Return
