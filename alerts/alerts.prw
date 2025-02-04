@@ -13,6 +13,11 @@ User Function zAlert()
     
     FWAlertWarning("Mensagem de aviso", "TÃ­tulo FWAlertWarning")
     
+<<<<<<< Updated upstream
     FWAlertYesNo("Mensagem de pergunta Sim / NÃ£o", "TÃ­tulo FWAlertYesNo")
 "teste commit"
+=======
+    FWAlertYesNo("Mensagem de pergunta Sim / Não", "Título FWAlertYesNo")
+    "s"
+>>>>>>> Stashed changes
 Return
