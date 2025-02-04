@@ -62,7 +62,7 @@ local cArquivo := ""
      aAdd( aPergs ,{5,"001 - Alimentação"                ,.F.,90,"",.F.})
      aAdd( aPergs ,{5,"002 - Associações Diversas"        ,.F.,90,"",.F.})
      aAdd( aPergs ,{5,"003 - Companhias de Petróleo/Óleo",.F.,100,"",.F.})
-      
+    
      //Tipo 6 - Cria um botão tipo File para buscar arquivos e retorna o caminho apontado.
      aAdd( aPergs ,{9,"Tipo 6 - Busca de Arquivo via FILE",200, 40,.T.})      
      aAdd( aPergs ,{6,"Aponte o arquivo:",Space(100),"","","",70,.F.,"Todos os arquivos (*.*) |*.*"})     

@@ -37,10 +37,10 @@ User Function fConvrtData()
     nData := Day(Date()) // Se data for 06/11/2024, retorna 6
     
     // Month -          Retorna o mes de uma data	
-    nMes := Month(Date()) // Se data for 06/11/2024, retorna 2024
+    nMes := Month(Date()) // Se data for 06/11/2024, retorna 11
     
     // Year -           Retorna o ano de uma data	
-    nAno := Year(Date()) // Se data for 06/11/2024, retorna 11
+    nAno := Year(Date()) // Se data for 06/11/2024, retorna 2024
     
     // cMonth -         Retorna uma cadeia de caracteres com nome do mês em inglês	
     cMes := cMonth(Date()) // Retorna o mês da Data em inglês, "November"
