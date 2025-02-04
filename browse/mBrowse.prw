@@ -1,6 +1,6 @@
 User Function fMBrowse()
     Local aArea       := GetArea()
-    Local cTabela     := "ZZZ"
+    Local  cTabela    := "SA1"
     Private aCores    := {}
     Private cCadastro := "Título do Cadastro"
     Private aRotina   := {}
@@ -15,20 +15,18 @@ User Function fMBrowse()
     aAdd(aRotina,{"* Função B", "u_zFuncB", 0, 8})
  
     //Montando as cores da legenda
-    aAdd(aCores,{"ZZZ_CAMPO == '1' ", "BR_VERDE" })
-    aAdd(aCores,{"ZZZ_CAMPO == '2' ", "BR_VERMELHO" })
-     
+    aAdd(aCores,{"A1_MSBLQL == '1' ", "BR_VERDE" })
+    aAdd(aCores,{"A1_MSBLQL == '2' ", "BR_VERMELHO" })
+    
     //Selecionando a tabela e ordenando
     DbSelectArea(cTabela)
     (cTabela)->(DbSetOrder(1))
-     
+
     //Montando o Browse
-    mBrowse(6, 1, 22, 75, cArquivo, , , , , , aCores )
+    mBrowse(6, 1, 22, 75, cTabela, , , , , , aCores )
      
     //Encerrando a rotina
     (cTabela)->(DbCloseArea())
-    RestArea(aArea)
-// Teste comit  
-// Segundo commit    
+    RestArea(aArea)   
 
 Return
